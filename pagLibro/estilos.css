@@ -1,0 +1,206 @@
+:root{
+    --color-fondo:#d4dff1;
+    --color-uno:white;
+    --color-dos:#B4C7E7;
+    --color-tres:#F8CBAD;
+    --color-cuatro:#EDECE8;
+    --color-card:#d0ceee;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+html,body{ 
+    background-color: #cac7d4;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    background:  url(./icons/pexels-karolina-grabowska-7291997.jpg)  ;
+    background-repeat: no-repeat;
+ 
+    background-size: cover ;
+}
+
+
+
+
+
+header{
+    width: auto;
+    background-color: var(--color-dos);
+    color: white;
+    height: 40%;
+    font-family: Tahoma;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+   
+  
+
+}
+
+
+/*Estilos del menu*/
+header .menu {
+    background-color: var(--color-tres);
+    margin-left: 0;
+    margin-right: 0;
+    
+    
+}
+.menu ul{
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-flex;
+    
+    
+}
+.menu ul li a{
+    color: var(--color-uno);
+    text-decoration: none;
+    font-weight: bold;
+    width: auto;
+    margin: 0;
+    padding: 10px;
+   
+}
+.menu ul li a:hover{
+    background-color: var(--color-fondo);
+    color: var(--color-uno);
+}
+ .container{
+    
+    display: flex;
+    margin-top: 1%;
+    
+
+    
+}
+h1::after {
+    content: "📖";
+    
+  }
+
+.container, .libro{
+    width: 20%;
+    height: 40%;
+  
+   
+}
+ 
+main .sub-container>p{
+   padding-left: 10%;
+   padding-right: 10%;
+   text-align: justify;
+   text-justify: inter-word;
+    line-height: 1.6;
+    font-weight: bold;
+    color: black;
+    background: rgba(150, 185, 235, 0.267);
+   
+   
+}
+.sub-container{
+ color: var(--color-dos);
+
+ font-family: Tahoma;
+ 
+ 
+}
+
+main .sub-container>p>img{
+    width: 8%;
+    height: 8%;
+}
+
+/*Estilos de los contenedores */
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,240px) ; 
+    gap: 26px;
+    place-content: center;
+    margin-left: 2%;
+ }
+ 
+ .product-card{
+    margin-top: 16%;
+     width: 240px;
+     text-decoration: none;
+    color: var(--color-uno);
+    background-color: rgba(199, 181, 240, 0.39);
+    padding: 8%; 
+    border-radius: 8%;
+   font-size: larger;
+  
+    
+    
+ }
+ .sub-container>p{
+    color: black;
+    margin-top: 0;
+    margin-right: 10%;
+    margin-left: 8%;
+   
+  
+    
+ }
+
+ .product-card:hover{
+    cursor: pointer;
+   transform:scale(1.2);
+   border: 2px solid var(--color-dos);
+   background-color:rgba(199, 218, 226, 0.877);
+ }
+ .product-card img{
+     width: 240px;
+     height: 240px;
+     border-radius: 20px;
+     object-fit: cover;
+ 
+ }
+ .product-info{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 12px;
+     
+ }
+ 
+ .product-info div p:nth-child(1) {
+     font-weight: bold;
+     font-size: var(--md);
+     margin-top: 0;
+     margin-bottom: 4px;
+ }
+ .product-info div p:nth-child(2) {
+     color: var(--very-light-pink);
+     font-size: var(--sm);
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+ .product-info figure img{
+     width: 35px;
+     height: 35px;
+ }
+ @media (max-width: 640px){
+    
+    .cards-container{
+        grid-template-columns: repeat(auto-fill,140px) ; 
+     }
+     .product-card{
+        width: 140px; 
+        margin-top: 30%;
+    }
+    .product-card img{
+        width: 140px;
+        height: 140px;
+    }
+
+ }
